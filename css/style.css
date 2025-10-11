@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rubik+Dirt&display=swap');
+
+* {
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	margin: 0px;
+}
+
+/* Main Section */
+.wrapper {
+	font-family: Roboto;
+	font-weight: 400;
+	margin: auto;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 25px;
+}
+
+/* Style for Banner */
+.banner {
+  background-image: url('../images/BackgroundBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;        
+  background-position: center;  
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px;
+  height: 450px;
+  font-family: roboto;
+  line-height: 20px;
+}
+
+/* Copy section of banner */
+.copy {
+	width: 80%;
+	padding: 50px;
+	font-family: Roboto;
+	font-weight: 400;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+.copy h1 {
+	margin-bottom: 30px;
+	background: none;
+	max-width: none;
+	padding: 0;
+}
+
+
+/* Navigation Styles */
+/*****************************************/
+/* Navigation Bar*/
+.nav {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	text-align: right;
+	background: linear-gradient(#d6d6d4, #ffffff);
+	border-bottom: solid 40px;
+	z-index: 1000;
+	margin-bottom: 20px;
+}
+
+.nav li {
+	margin: 10px;
+}
+
+.nav ul {
+	margin: auto;
+	margin-top: 8px;
+	top: 0;
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+	margin-right: 50px;
+	max-height: 100%;
+}
+
+/* Logo style */
+.nav img {
+	max-width: 112px;
+	max-height: 56px;
+	float: left;
+}
+
+.navtext {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px;
+  border: solid 2px transparent;
+  transition: all 0.2s ease;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal; 
+}
+
+.navtext:hover {
+	color: #0c92e0;
+	transition: all 0.2s ease;
+}
+
+/*****************************************/
+/* Style for About Section */
+.about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 50px; 
+}
+
+.about figure {
+  width: 20%; 
+  text-align: left;
+  margin: 0; 
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.about figcaption {
+  margin-top: 10px;
+}
+
+/* Special case: About section with ID "webdesign" */
+#webdesign {
+	display: flex;
+  flex-wrap: nowrap;             
+  justify-content: flex-start; 
+}
+
+#webdesign figure {
+	width: 100%;
+}
+
+#webdesign figcaption {
+	padding: 20px 0 0 20px;
+}
+
+#webdesign img {
+	width: 50%;
+	margin: 30px;
+}
+
+#UI img {
+	box-shadow: none;
+}
+
+#ai {
+	text-align: left;
+}
+
+#grey {
+	width: 100%;
+	height: auto;
+	background: #f5f5f5;
+}
+
+#white {
+	background: #fff;
+}
+
+h2 {
+	text-align: left;
+	padding: 50px 0px 0px 100px;
+	font-size: 30px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: underline;
+  color: #0A91E0;
+}
+
+h3 {
+	text-align: left;
+	padding: 50px 0px 0px 50px;
+	font-size: 30px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+ h1 {
+  margin: auto;
+  align-items: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.program_icon h3 {
+	text-align: center;
+	padding: 20px;
+}
+
+/* Adjusting width of photos on photo page */
+#photos.about figure {
+	width: 30%;
+}
+
+#audio figure {
+	margin: 20px;
+}
+
+#audio.about figcaption {
+	width: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+	gap: 30px;
+}
+
+video {
+	max-width: 50%;
+}
+
+
+/*****************************************/
+/* Footer of pages */
+footer {
+	border-top: solid 2px;
+	border-image: linear-gradient(to right, transparent, black, transparent) 1;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 40px;
+}
+
+/*****************************************/
+/* Header for sections */
+.heading {
+	margin: auto;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: solid 2px;
+	width: 30%;
+	border-image: linear-gradient(to right, transparent, black, transparent) 1;
+}
+
+/*****************************************/
+/* Form Styles */
+form {
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	border: solid 2px black;
+	border-radius: 10px;
+	text-align: left;
+}
+
+label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+	font-family: roboto;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form button {
+	max-height: 30px;
+	max-width: 150px;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+form button:hover {
+	background-color: #c4c4c4;
+}
+
+
+/*************************************************/
+/* Style for responsiveness */
+@media only screen and (max-width: 768px) {
+    
+.wrapper {
+	max-width: 100%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+   .nav ul {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav li {
+    margin: 15px 0; 
+  }
+
+  .nav img {
+  	margin-top: 20px;
+    margin-bottom: 20px; 
+  }
+
+ .banner {
+    	margin-top: 153px;
+    	height: auto;
+    }
+
+ .copy {
+		margin: auto;
+		margin-top: 150px;
+		width: 100%;
+		padding: 20px;
+	}
+
+ .about {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #webdesign {
+  width: 100%;
+  flex-direction: column;             
+  align-items: center; 
+}
+
+ #webdesign img {
+	width: 80%;
+	margin: 30px;
+}
+  
+.about figure {
+    width: 100%; 
+    max-width: 300px; 
+  }
+
+h2 {
+		text-align: center;
+		padding: 25px 0px 0px 0px;
+}
+
+h1 {
+	line-height: 35px;
+}
+
+#photos.about figure {
+	width: 100%;
+}
+
+#audio {
+	align-items: center;
+	flex-direction: column;
+}
+
+#audio.about figcaption {
+	padding-bottom: 10px;
+}
+
+video {
+	max-width: 100%;
+}
+
+form {
+	width: 90%;
+	margin: auto;
+}
+
+}
