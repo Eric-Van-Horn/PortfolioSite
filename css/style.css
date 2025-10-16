@@ -28,7 +28,7 @@
 
 /* Style for Banner */
 .banner {
-  background-image: url('../images/bbnew.jpg');
+  background-image: url('../images/Untitled-1-01.jpg');
   background-repeat: no-repeat;
   background-size: cover;        
   background-position: center;  
@@ -68,7 +68,7 @@
 	padding: 20px;
 	text-align: right;
 	background: linear-gradient(#d6d6d4, #ffffff);
-	border-bottom: solid 40px;
+	border-bottom: solid 40px #213147;
 	z-index: 1000;
 	margin-bottom: 20px;
 }
@@ -109,8 +109,12 @@
 }
 
 .navtext:hover {
-	color: #0c92e0;
+	color: #78BCD2;
 	transition: all 0.2s ease;
+}
+
+.current {
+	color: #78BCD2;
 }
 
 /*****************************************/
@@ -198,20 +202,20 @@
 }
 
 h2 {
-	text-align: left;
-	padding: 50px 0px 0px 100px;
-	font-size: 30px;
+  text-align: left;
+  padding: 50px 0px 0px 100px;
+  font-size: 30px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 900;
   font-style: italic;
   text-decoration: underline;
-  color: #0A91E0;
+  color: #78BCD2;
 }
 
 h3 {
-	text-align: left;
-	padding: 50px 0px 0px 50px;
-	font-size: 30px;
+  text-align: left;
+  padding: 50px 0px 0px 50px;
+  font-size: 30px;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -226,27 +230,27 @@ h3 {
 }
 
 .program_icon h3 {
-	text-align: center;
-	padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Adjusting width of photos on photo page */
 #photos.about figure {
-	flex: 1 0 300px;
+  flex: 1 0 300px;
 }
 
 #audio.about figcaption {
-	width: 300px;
-	text-align: center;
-	gap: 30px;
+  width: 300px;
+  text-align: center;
+  gap: 30px;
 }
 
 #audio {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 iframe {
-	 width: 50%;
+  width: 50%;
   aspect-ratio: 16 / 9; 
   border: none;
 }
