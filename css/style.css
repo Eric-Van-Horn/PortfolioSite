@@ -26,19 +26,35 @@
 	margin-top: 200px;
 }
 
-/* Style for Banner */
 .banner {
-  background-image: url('../images/Untitled-1-01.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;        
-  background-position: center;  
+  position: relative;  
   width: 100%;
   margin-top: 100px;
   padding: 20px;
-  height: auto;
-  font-family: roboto;
+  font-family: Roboto, sans-serif;
   line-height: 20px;
+  overflow: hidden;
+  height: auto;
 }
+
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%; 
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; 
+  z-index: -1; 
+  pointer-events: none; 
+}
+
+.banner .copy {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Copy section of banner */
 .copy {
@@ -46,8 +62,11 @@
 	padding: 50px;
 	font-family: Roboto;
 	font-weight: 400;
-	margin-top: 20px;
 	line-height: 20px;
+	background-color: #213147;
+	color: #ffffff;
+	border-radius: 10px;
+	box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .copy h1 {
