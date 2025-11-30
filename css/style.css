@@ -150,33 +150,30 @@
 }
 
 /*****************************************/
-/* Style for About Section */
-.about {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
+/* Style for About Section (Grid) */
+span {
+  min-height: 15vh;
+  padding: 1rem;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start; 
-  gap: 50px; 
+  flex-direction: column;
+  justify-content: center;
 }
 
-.about figure {
-  text-align: left;
-  flex: 1 1 200px;
-  max-width: 100%;
+.about {
+	width: 80%;
+  margin: 0 auto;
+	padding: 2rem;
 }
 
-.about img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+.about-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 1rem;
 }
 
-.about figcaption {
-  margin-top: 10px;
+.about-grid + .about-grid {
+	margin-top: 1rem;
 }
 
 /* Special case: About section with ID "webdesign" */
@@ -431,10 +428,6 @@ form button:hover {
 	width: 70%;
 	margin: auto;
 }
-  
-.about figure {
-    max-width: 100%;  
-  }
 
 h2 {
 		text-align: center;
