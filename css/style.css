@@ -158,7 +158,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  filter: drop-shadow(2px 2px 3px #000000);
 }
 
 .about {
