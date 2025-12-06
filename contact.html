@@ -4,7 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Contact Eric</title>
+
+    <!-- Hamburger Menu Icon (Google fonts) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+    <!-- Hamburger Menu jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <link rel="stylesheet" href="css/glightbox.min.css"/>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <script src="javascript/glightbox.min.js"></script>
+
+    <title>Eric Van Horn</title>
 </head>
 
 
@@ -13,20 +26,29 @@
 
 <!-- Navigation -->
 <div class="nav">
-    <!-- Home Button -->
-    <a href="index.html"><img src="images/Logo.png"></a>
+
+<a href="index.html"><img src="images/Logo.png"></a>
+
+<div class="nav-pages">
+
+    <!-- Mobile Nav -->
+    <a href="#" class="mobile-nav"><span class="material-symbols-outlined">menu</span></a>
+
     <ul>
-        <li><a class="navtext" href="Multimedia.html">Multimedia</a></li>
-        <li><a class="navtext current" href="#">Contact</a></li>
+        <li class="close-nav"><span class="material-symbols-outlined">close</span></li>
+        <a href="Multimedia.html"><li>MULTIMEDIA</li></a>
+        <a href="contact.html"><li>CONTACT</li></a>
     </ul>
 </div>
+<!-- End Nav -->    
+</div>
+
+<!-- Spacer -->
+<div class="spacer"></div>
 
 
-<!-- Wrapper Class (Formats entire page) -->
-<div class="wrapper" id="contact">
-    
 
-<h1>Contact Me!</h1>
+<h1 style="text-align: center;">Contact Me!</h1>
 <br><br>
 
 <!-- Form -->
@@ -43,16 +65,26 @@
   <button type="submit">Send Message</button>
 </form>
 
+<div class="spacer"></div>
+
+<footer>© 2025 All rights reserved.</footer>
 
 
 
-<!-- End Wrapper -->
-</div>
-<footer>
-  <p>© 2025 Eric Van Horn. All rights reserved.</p>
-</footer>
+<!------- JavaScript ------->
+<!-- Hamburger Menu -->
+<script>
+    $(".mobile-nav").on("click", function () {
+        $(".nav-pages ul").toggleClass("open");
+    });
+
+    $(".close-nav").on("click", function () {
+        $(".nav-pages ul").removeClass("open");
+    });
+</script>
 
 
 </body>
 
 </html>
+

@@ -4,6 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Hamburger Menu Icon (Google fonts) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+    <!-- Hamburger Menu jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <link rel="stylesheet" href="css/glightbox.min.css"/>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <script src="javascript/glightbox.min.js"></script>
+
     <title>Eric's Other Media</title>
 </head>
 
@@ -13,111 +26,160 @@
 
 <!-- Navigation -->
 <div class="nav">
-    <!-- Home Button -->
-    <a href="index.html"><img src="images/Logo.png"></a>
+
+<a href="index.html"><img src="images/Logo.png"></a>
+
+<div class="nav-pages">
+
+    <!-- Mobile Nav -->
+    <a href="#" class="mobile-nav"><span class="material-symbols-outlined">menu</span></a>
+
     <ul>
-        <li><a class="navtext current" href="#">Multimedia</a></li>
-        <li><a class="navtext" href="contact.html">Contact</a></li>
+        <li class="close-nav"><span class="material-symbols-outlined">close</span></li>
+        <a href="Multimedia.html"><li>MULTIMEDIA</li></a>
+        <a href="contact.html"><li>CONTACT</li></a>
     </ul>
 </div>
-
-
-<!-- Wrapper Class (Formats entire page) -->
-<div class="wrapper" id="multimedia">
-    <br><br><br><br>
-
-<!-- Differentiates sections -->
-<div class="background" id="grey">
-    <!-- Photography (Using about styles w/id) -->
-    <h2>Photography</h2>
-    <div class="about" id="photos">
-
-        <div class="about-grid">
-            <span><img src="images/Artificial Structures.jpg"></span>
-            <span> <img src="images/City Skylines.jpg"> </span>
-            <span><img src="images/Back Light.JPG"></span>
-        </div>
-
-        <div class="about-grid">
-            <span><img src="images/nazareth.JPG"></span>
-            <span> <img src="images/City Skylines.jpg"> </span>
-        </div>
-    </div>
+<!-- End Nav -->    
 </div>
 
-<!-- Audio Section -->
-<div class="background" id="white">
-    <!-- Audio (Using about styles w/id) -->
-    <h2>Audio/Sound Design</h2>
-    <div class="about" id="audio">
+<!-- Spacer -->
+<div class="spacer"></div>
 
-        <div class="about-grid">
-        <!-- Audio File 1 -->
+<!-- Video Section -->
+<h1 style="text-align: center;">Video</h1>
+<div class="video-container">
+    
+    <!-- Video 1 -->
+    <iframe src="https://www.youtube.com/embed/8pNn42H55Sc?si=o1AKoRHRKqlAuo1F" title="YouTube video player" ></iframe>
+
+    <!-- Video 2 -->
+    <iframe src="https://www.youtube.com/embed/00-GNNXeqzs?si=Oo4NZe_LY9qWzOjl" title="YouTube video player" ></iframe>
+
+<!-- End Video -->    
+</div>
+
+<br><br>
+<div class="background-grey">
+<!-- Grid of Photography -->
+<div class="graphics-container">
+    <h1 style="text-align: center;">Photography</h1>
+    <!-- Row 1 -->
+    <div class="graphics-grid" id="other-media">
+        <!-- Image 1 -->
         <span>
-        <div class="audiocontainer">
+            <a href="images/Artificial Structures.jpg" class="glightbox">
+            <img src="images/Artificial Structures.jpg" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 2 -->
+        <span>
+            <a href="images/City Skylines.jpg" class="glightbox">
+            <img src="images/City Skylines.jpg" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 3 -->
+        <span>
+            <a href="images/Back Light.JPG" class="glightbox">
+            <img src="images/Back Light.JPG" alt="Sample Image">
+            </a>
+        </span>
+        </div>
+
+
+    <!-- Row 2 -->
+    <div class="graphics-grid" id="other-media">
+        <!-- Image 4 -->
+        <span>
+            <a href="images/nazareth.JPG" class="glightbox">
+            <img src="images/nazareth.JPG" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 5 -->
+        <span>
+            <a href="images/posted.jpg" class="glightbox">
+            <img src="images/posted.jpg" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 6 -->
+        <span>
+            <a href="images/firehouse.jpg" class="glightbox">
+            <img src="images/firehouse.jpg" alt="Sample Image">
+            </a>
+        </span>
+    </div>
+
+<!-- End other-media (Photography Section) -->
+</div>
+</div>
+
+
+<br><br>
+<!-- Audio/Sound Design Section -->
+<h1 style="text-align: center;">Audio/Sound Design</h1>
+<div class="audio-container">
+    
+    <!-- Audio 1 -->
+    <div class="audio">
+        <h2>Radio Show Promo</h2>
         <audio controls>
             <source src="Audio/TheWolfeDenPromo.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <figcaption>A radio promo for "The Wolfe Den" (A radio show that airs on ESU's Radio Station)</figcaption>
-        </div>
-        </span>
+    </div>
 
-        <span>
-        <!-- Audio File 2 -->
-        <div class="audiocontainer">
+    <!-- Audio 2 -->
+    <div class="audio">
+        <h2>Radio Show Promo</h2>
         <audio controls>
             <source src="Audio/BluesMusicPromo.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <figcaption>An exericse from a sound recording class to create a radio show promo.</figcaption>
-        </div>
-        </span>
+    </div>
 
-        <span>
-        <!-- Audio File 3 -->
-        <div class="audiocontainer">
+    <!-- Audio 3 -->
+    <div class="audio">
+        <h2>Audio Documentary</h2>
         <audio controls>
             <source src="Audio/DataHarvestingAudioDoc.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <figcaption>An audio documentary about data harvesting online and the ethics of it.</figcaption>
     </div>
-    </span>
-</div>
-</div>
-
-<!-- Video Section -->
-<div class="background" id="grey">
-    <!-- Video (Using about styles w/id) -->
-    <h2>Video</h2>
-    <div class="about" id="video">
     
-    <!-- Video 1 -->
-    <iframe src="https://www.youtube.com/embed/8pNn42H55Sc?si=o1AKoRHRKqlAuo1F" title="YouTube video player" ></iframe>
-    
-    <!--
-    <p>This is a public service announcement that I created for a local, non-profit organization. It was for a class project, but was also aired on the campus TV station.</p>
-    -->
 
-    <!-- Video 2 -->
-    <iframe src="https://www.youtube.com/embed/XjGyn1z_HZo?si=rKWDm94tBBNALu1w" title="YouTube video player" ></iframe>
-    
-    <!-- 
-    <p>Social media post meant to advertise the main purpose of a service. The service is a drone cinematography brand that delivers ready to post footage for social platforms. This is a spec piece.</p>
-    -->
 
-    <!-- Video 3 -->
-    <iframe src="https://www.youtube.com/embed/00-GNNXeqzs?si=Oo4NZe_LY9qWzOjl" title="YouTube video player" ></iframe>
-    </div>
+
+<!-- End Audio Section -->    
 </div>
 
 
-<!-- End Wrapper -->
-</div>
-<footer>
-  <p>© 2025 Eric Van Horn. All rights reserved.</p>
-</footer>
+<footer>© 2025 All rights reserved.</footer>
+
+
+<!------- JavaScript ------->
+<!-- Lightbox Script -->
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    autoplayVideos: true,
+    loop: true
+});
+</script>
+
+<!-- Hamburger Menu -->
+<script>
+    $(".mobile-nav").on("click", function () {
+        $(".nav-pages ul").toggleClass("open");
+    });
+
+    $(".close-nav").on("click", function () {
+        $(".nav-pages ul").removeClass("open");
+    });
+</script>
 
 
 </body>

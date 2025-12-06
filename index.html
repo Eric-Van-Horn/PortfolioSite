@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Hamburger Menu Icon (Google fonts) -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <!-- Hamburger Menu jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <link rel="stylesheet" href="css/glightbox.min.css"/>
+
+    <!-- GLightBox from GitHub (Allows Videos) -->
+    <script src="javascript/glightbox.min.js"></script>
+
     <title>Eric Van Horn</title>
 </head>
 
@@ -11,176 +25,171 @@
 <!-- Start of body -->
 <body>
 
-
-
 <!-- Navigation -->
 <div class="nav">
-    
-    <!-- Home Button -->
-    <a href="index.html"><img src="images/Logo.png"></a>
+
+<a href="index.html"><img src="images/Logo.png"></a>
+
+<div class="nav-pages">
+
+    <!-- Mobile Nav -->
+    <a href="#" class="mobile-nav"><span class="material-symbols-outlined">Menu</span></a>
+
     <ul>
-        <li><a class="navtext" href="Multimedia.html">Multimedia</a></li>
-        <li><a class="navtext" href="contact.html">Contact</a></li>
+        <li class="close-nav"><span class="material-symbols-outlined">close</span></li>
+        <a href="Multimedia.html"><li>MULTIMEDIA</li></a>
+        <a href="contact.html"><li>CONTACT</li></a>
     </ul>
 </div>
+<!-- End Nav -->    
+</div>
 
+<!-- Spacer -->
+<div class="spacer" id="home"></div>
 
-<!-- Banner Image -->    
-<div class="banner">
-     <video autoplay muted loop playsinline class="banner-video">
-    <source src="images/bannermotion.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-
-    <div class="copy">
+<!-- Hero Banner -->
+<div class="hero-banner">
+    
+    <!-- About me -->
+    <div class="hero-copy">
         <h1>Eric Van Horn</h1>
-        <p>With a degree in Digital Media Technologies and a concentration is graphic & web design, I’ve had the chance to explore many aspects of media production, including video, photography, sound recording, and more. I consider myself to be proficient in all aspects of media production, with a broad skill set that allows me to tackle a wide range of projects.</p>
+        <p>With a degree in Digital Media and a concentration is graphic & web design, I’ve had the chance to explore many aspects of media production, including video, photography, sound recording, and more. I consider myself to be proficient in all aspects of media production, with a broad skill set that allows me to tackle a wide range of projects.</p>
 
-        <br>
         <p>Whether I’m designing a website or shooting a video, I’m motivated by bringing an idea to life and making it the best it can be. I don’t believe in settling for "good enough." I’m flexible in my approach and often find that the best ideas come to me as I go, rather than following a rigid plan.</p>
 
-        <br>
-        <p>While I’m still building my portfolio, most of the work you’ll see on this site comes from class projects. These projects have allowed me to develop a variety of skills and experiment with different media. I’m always looking for opportunities to learn and grow, and I’m excited to continue expanding my skill set.</p>
-
-        <br>
-
-    <!-- End Copy-->
+    <!-- End about me -->    
     </div>
-
-<!-- End Banner -->
-</div>
-
-
-<!-- Wrapper Class (Formats entire page) -->
-<div class="wrapper">
-
-<h1>Graphic & Web Design Work</h1>
-
-<br><br>
-
-<!-- Differentiates sections -->
-<div class="background" id="grey">
-
-    <!-- Graphics (Using about styles) -->
-    <h2>Graphics</h2>
-    <div class="about">
-        
-        <div class="about-grid">
-            <span><img src="images/SaleAd.png"></span>
-            <span> <img src="images/TimelinePostt.png"> </span>
-            <span><img src="images/EnergyDrink.png"></span>
-        </div>
-
-        <div class="about-grid">
-            <span><img src="images/IdeaToAltitude.png"></span>
-            <span><img src="images/CameraStyle.jpg"></span>
-            <span><img src="images/Reminder.png"></span>
-            <span><img src="images/StatReel.png"></span>
-        </div>
-
-        
-
+    
+    <!-- hero-vid -->
+    <div class="hero-vid">
+        <video autoplay muted loop>
+          <source autoplay src="images/ReadyToPostAnywhere.mp4" type="video/mp4"/>
+        </video>
+    <!-- End hero-vid -->
     </div>
-
-<!-- End Background Section -->    
+<!-- End hero-banner -->    
 </div>
 
-<!-- Wed Design (Using about styles) -->
-<div class="background" id="white"></div>
-    <h2>Web/UI/UX</h2>
-    <h3>Web Projcts</h3>
-<div class="about" id="webdesign">
-    <figure>
-    <a href="https://oneupapparel.netlify.app/" target="_blank"><img src="images/oneup.png" align="left"></a>
-    <figcaption>
 
-        For this project, I created a mockup for a fictional clothing brand from scratch, complete with a logo, product mockups, and a fully coded website. I built the site using HTML and CSS, and while I don’t know JavaScript myself, I experimented with some AI-generated code to add some interactivity. The website is a work in progress, as I often use it as a sandbox to test new skills I have learned. I started creating this when I was just beginning to learn and experiment with web design, and through the process I gained a stronger understanding of how branding, design, and development can come together in a single project.
-
-        <br><br><br>
-        <p><strong>Features:</strong></p>
-        <ul>
-            <li>Utilized AI to generate JavaScript for interactive elements (e.g., changing item colors on selection)</li>
-            <li>Fully responsive design for different size screens</li>
-            <li>Custom graphics and logos for the site.</li>
-        </ul>
-        <br>
-        <p><b>Click any image to view the corresponding prototype.</b></p>
-    </figcaption>
-    </figure>
-
-
-
-
-</div>
-
-<!-- Graphics (Using about styles) -->
-<h3>UI/UX</h3>
-<div class="about" id="UI">
-    <div class="about-grid">
-        <!-- Prototype 1 -->
+<!-- Grid of Graphic Work -->
+<div class="graphics-container">
+    <div class="graphics-grid">
+        <!-- Image 1 -->
         <span>
-            <a href="https://www.figma.com/proto/HcDNnCmsJcDTF7MPFaM1nY/Travel-App-Prototype?t=uYqe0VGXrSYkXbkM-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2"target="_blank"><img src="images/travelapp.png"></a>
-            <figcaption>
-            <b>GoTravel</b>
-            <br>
-            Mobile Travel app prototype
-            <br>
-            Spec work
-            </figcaption>
-        </span>
-        
-        <!-- Prototype 2 -->
-        <span>
-            <a href="https://www.figma.com/proto/xCOAjy4BFHjzjde4UzXDUR/Vynal-Prototype?t=7BzYAOavGkglqdEP-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-499&starting-point-node-id=1%3A499"target="_blank">
-            <img src="images/Vynal.png"></a>
-            <figcaption>
-            <b>Vynal</b>
-            <br>
-            Utilized Figma Make AI to bring my concept to life. Through effective prompting and iteration, a fully custom design was created.
-            </figcaption>
+            <a href="images/SaleAd.png" class="glightbox">
+            <img src="images/SaleAd.png" alt="Sample Image">
+            </a>
         </span>
 
-        <!-- Prototype 3 -->
+        <!-- Image 2 -->
         <span>
-            <a href="https://www.figma.com/proto/88M9dehdyz7vbmrrAWyCj4/Uber-Redesign?node-id=115-172&t=nhavjwirRLJqeUzH-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=115%3A172"target="_blank">
-            <img src="images/Uber.png"></a>
-            <figcaption>
-            <b>Uber (Holiday Theme)</b>
-            <br>
-            Redesign of the Uber app, incorporating some new features and a holiday theme.
-            <br>
-            Spec work
-            </figcaption>
+            <a href="images/StatReel.png" class="glightbox">
+            <img src="images/StatReel.png" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 3 -->
+        <span>
+            <a href="images/EnergyDrink.png" class="glightbox">
+            <img src="images/EnergyDrink.png" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 4 -->
+        <span>
+            <a href="images/IdeaToAltitude.png" class="glightbox">
+            <img src="images/IdeaToAltitude.png" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 5 -->
+        <span>
+            <a href="images/Timelinepostt.png" class="glightbox">
+            <img src="images/Timelinepostt.png" alt="Sample Image">
+            </a>
+        </span>
+
+        <!-- Image 6 -->
+        <span>
+            <a href="images/Reminder.png" class="glightbox">
+            <img src="images/Reminder.png" alt="Sample Image">
+            </a>
         </span>
     </div>
 </div>
 
 
-<!-- Differentiates sections -->
-<div class="background" id="grey">
+<!-- Website 1 -->
+<div class="web">
+    <div class="web-copy">
+        <h1>AirReel Assets Website</h1>
+        <p>For this project, I designed and developed a website for a mock brand called AirReel Assets, a drone cinematography service. The goal was to create a professional, realistic site that would represent the brand's services effectively. I used HTML and CSS to structure and style the website, with a touch of JavaScript for interactivity, such as the mobile navigation and lightbox gallery for showcasing images. The site consists of six pages, each filled with realistic content to simulate a true business offering. I focused on making the design clean, modern, and user-friendly, ensuring it was fully responsive for both desktop and mobile devices.</p>
 
-    <h2>Ai In Media</h2>
-    <div class="about" id="ai">
+        <b><p>Click the image to view the site!</p></b>
+    </div>
+    <div class="web-img">
+        <img src="images/AirReelAssetsMock.png">
+    </div>
+<!-- End Web -->    
+</div>
+
+<!-- UI/UX -->
+<div class="background-grey">
+<div class="UI">
+    <div class="UImock">
+       <h3>Click Me!</h3>
+       <a href="https://www.figma.com/proto/88M9dehdyz7vbmrrAWyCj4/Uber-Redesign?node-id=115-294&p=f&t=mcm5YfIfI4hiBTTf-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=115%3A172" target="_blank"><img src="images/Uber.png"></a>
+        <h2>Uber Holiday Redesign</h2>
+    </div>
+
+    <div class="UImock">
+        <h3>Click Me!</h3>
+        <a href="https://www.figma.com/proto/xCOAjy4BFHjzjde4UzXDUR/Vynal-Prototype?node-id=1-499&p=f&t=DEBrCkP5vLzXv5l3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A499" target="_blank"><img src="images/Vynal.png"></a>
+        <h2>Vynal Music App</h2>
+    </div>
+
+    <div class="UImock">
+        <h3>Click Me!</h3>
+        <a href="https://www.figma.com/proto/idlLUdXT7EUkMIFm0GW4lj/Food-Delivery-App?node-id=16-27&p=f&t=FRnpEeoJrBIowDR3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A27" target="_blank"><img src="images/Foodie.png"></a>
+        <h2>Foodie Delivery App</h2>
+    </div>
+<!-- End UI/UX -->    
+</div>
+</div>
+
+<!-- Ai In Media -->
+<div class="ai-media">
+    <h1>AI In Media</h1>
     <p>I often incorporate AI tools into my workflow. Whether I’m brainstorming ideas and concepts or I'm stuck on something, AI acts as a sounding board, much like bouncing ideas off another person. If I have a rough concept or need fresh perspectives, I input it into AI and see where it takes me. This helps me visualize ideas quickly, especially for designs or images, allowing me to explore what a concept could look like before dedicating hours to actually creating it. I also use AI to troubleshoot or learn new techniques, such as getting quick tips on how to perform specific tasks or a to get a snippet of code. It helps me push my boundaries and fill in the gaps where I’m still learning or experimenting, making my work more efficient and improved.</p>
-    </div>
 
-<!-- End Background Section -->    
+<!-- End AI in Media -->
 </div>
 
 
-<!-- End Wrapper -->
-</div>
+<footer>© 2025 All rights reserved.</footer>
 
 
+<!------- JavaScript ------->
+<!-- Lightbox Script -->
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox',
+    autoplayVideos: true,
+    loop: true
+});
+</script>
 
+<!-- Hamburger Menu -->
+<script>
+$(".mobile-nav").on("click", function () {
+    $(".nav-pages ul").addClass("open");
+});
 
-
-
-
-
-<footer>
-  <p>© 2025 Eric Van Horn. All rights reserved.</p>
-</footer>
+// CLOSE menu (X button)
+$(".close-nav").on("click", function () {
+    $(".nav-pages ul").removeClass("open");
+});
+</script>
 
 
 </body>
