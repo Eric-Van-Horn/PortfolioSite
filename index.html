@@ -3,19 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Speed Optimization: Unified Google Font link to reduce HTTP requests -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;900&family=Roboto:wght@400&family=Bangers&display=swap">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Hamburger Menu Icon (Google fonts) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 
-    <!-- Hamburger Menu jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <!-- GLightBox from GitHub (Allows Videos) -->
     <link rel="stylesheet" href="css/glightbox.min.css"/>
-
-    <!-- GLightBox from GitHub (Allows Videos) -->
-    <script src="javascript/glightbox.min.js"></script>
 
     <title>Eric Van Horn</title>
 </head>
@@ -61,8 +59,9 @@
     
     <!-- hero-vid -->
     <div class="hero-vid">
-        <video autoplay muted loop>
-          <source autoplay src="images/ExperimentalBillboard.mp4" type="video/mp4"/>
+        <!-- Speed Optimization: Added preload="metadata" and playsinline -->
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="images/ExperimentalBillboard.mp4" type="video/mp4"/>
         </video>
     <!-- End hero-vid -->
     </div>
@@ -76,73 +75,66 @@
     <!-- Row 1 -->
     <div class="graphics_row">
 
-        <!-- img 1 -->
+        <!-- Speed Optimization: Added loading="lazy" to all collage images -->
         <span>
-            <a href="images/SaleAd.png" class="glightbox">
-            <img src="images/SaleAd.png" alt="Sample Image">
+            <a href="images/SaleAd.webp" class="glightbox">
+            <img src="images/SaleAd.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
         
-        <!-- img 2 -->
         <span>
-            <a href="images/StatReel.png" class="glightbox">
-            <img src="images/StatReel.png" alt="Sample Image">
+            <a href="images/StatReel.webp" class="glightbox">
+            <img src="images/StatReel.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
         
-        <!-- img 3 -->
         <span>
-            <a href="images/EnergyDrink.png" class="glightbox">
-            <img src="images/EnergyDrink.png" alt="Sample Image">
+            <a href="images/EnergyDrink.webp" class="glightbox">
+            <img src="images/EnergyDrink.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 4 -->
         <span>
-            <a href="images/holidayspec.png" class="glightbox">
-            <img src="images/holidayspec.png" alt="Sample Image">
+            <a href="images/holidayspec.webp" class="glightbox">
+            <img src="images/holidayspec.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 5 -->
         <span>
-            <a href="images/SpecSmoothie.png" class="glightbox">
-            <img src="images/SpecSmoothie.png" alt="Sample Image">
+            <a href="images/SpecSmoothie.webp" class="glightbox">
+            <img src="images/SpecSmoothie.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 6 -->
         <span>
-            <a href="images/RunOnInsight.png" class="glightbox">
-            <img src="images/RunOnInsight.png" alt="Sample Image">
+            <a href="images/RunOnInsight.webp" class="glightbox">
+            <img src="images/RunOnInsight.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 7 -->
         <span>
-            <a href="images/OrderUpPoster.png" class="glightbox">
-            <img src="images/OrderUpPoster.png" alt="Sample Image">
+            <a href="images/OrderUpPoster.webp" class="glightbox">
+            <img src="images/OrderUpPoster.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 8 -->
         <span>
-            <a href="images/SecondaryBillboardMockup.png" class="glightbox">
-            <img src="images/SecondaryBillboardMockup.png" alt="Sample Image">
+            <a href="images/SecondaryBillboardMockup.webp" class="glightbox">
+            <img src="images/SecondaryBillboardMockup.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 9 -->
         <span>
-            <a href="images/HighwayMockup.png" class="glightbox">
-            <img src="images/HighwayMockup.png" alt="Sample Image">
+            <a href="images/HighwayMockup.webp" class="glightbox">
+            <img src="images/HighwayMockup.webp" alt="Sample Image" loading="lazy">
             </a>
         </span>
 
-        <!-- img 10 -->
-        <span><a href="images/EyeLevelMockup.png" class="glightbox">
-            <img src="images/EyeLevelMockup.png" alt="Sample Image">
-            </a></span>
+        <span>
+            <a href="images/EyeLevelMockup.webp" class="glightbox">
+            <img src="images/EyeLevelMockup.webp" alt="Sample Image" loading="lazy">
+            </a>
+        </span>
     </div>
 
 <!-- End Grid of Graphic Work -->
@@ -158,7 +150,7 @@
         <b><p>Click the image to view the site!</p></b>
     </div>
     <div class="web-img">
-        <a href="https://calm-puffpuff-af6242.netlify.app/" target="_blank"><img src="images/AirReelAssetsMock.png"></a>
+        <a href="https://calm-puffpuff-af6242.netlify.app/" target="_blank"><img src="images/AirReelAssetsMock.png" loading="lazy"></a>
     </div>
 <!-- End Web -->    
 </div>
@@ -168,19 +160,19 @@
 <div class="UI">
     <div class="UImock">
        <h3>Click Me!</h3>
-       <a href="https://www.figma.com/proto/88M9dehdyz7vbmrrAWyCj4/Uber-Redesign?node-id=115-294&p=f&t=mcm5YfIfI4hiBTTf-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=115%3A172" target="_blank"><img src="images/Uber.png"></a>
+       <a href="https://www.figma.com/proto/88M9dehdyz7vbmrrAWyCj4/Uber-Redesign?node-id=115-294&p=f&t=mcm5YfIfI4hiBTTf-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=115%3A172" target="_blank"><img src="images/Uber.png" loading="lazy"></a>
         <h2>Uber Holiday Redesign</h2>
     </div>
 
     <div class="UImock">
         <h3>Click Me!</h3>
-        <a href="https://www.figma.com/proto/xCOAjy4BFHjzjde4UzXDUR/Vynal-Prototype?node-id=1-499&p=f&t=DEBrCkP5vLzXv5l3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A499" target="_blank"><img src="images/Vynal.png"></a>
+        <a href="https://www.figma.com/proto/xCOAjy4BFHjzjde4UzXDUR/Vynal-Prototype?node-id=1-499&p=f&t=DEBrCkP5vLzXv5l3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A499" target="_blank"><img src="images/Vynal.png" loading="lazy"></a>
         <h2>Vynal Music App</h2>
     </div>
 
     <div class="UImock">
         <h3>Click Me!</h3>
-        <a href="https://www.figma.com/proto/idlLUdXT7EUkMIFm0GW4lj/Food-Delivery-App?node-id=16-27&p=f&t=FRnpEeoJrBIowDR3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A27" target="_blank"><img src="images/Foodie.png"></a>
+        <a href="https://www.figma.com/proto/idlLUdXT7EUkMIFm0GW4lj/Food-Delivery-App?node-id=16-27&p=f&t=FRnpEeoJrBIowDR3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A27" target="_blank"><img src="images/Foodie.png" loading="lazy"></a>
         <h2>Foodie Delivery App</h2>
     </div>
 <!-- End UI/UX -->    
@@ -200,28 +192,27 @@
 
 
 <!------- JavaScript ------->
-<!-- Lightbox Script -->
-<script>
-const lightbox = GLightbox({
-    selector: '.glightbox',
-    autoplayVideos: true,
-    loop: true
-});
-</script>
+<!-- Speed Optimization: Moved scripts to bottom to prevent render-blocking -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="javascript/glightbox.min.js"></script>
 
-<!-- Hamburger Menu -->
 <script>
-$(".mobile-nav").on("click", function () {
-    $(".nav-pages ul").addClass("open");
-});
+    // Initialize Lightbox
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        autoplayVideos: true,
+        loop: true
+    });
 
-// CLOSE menu (X button)
-$(".close-nav").on("click", function () {
-    $(".nav-pages ul").removeClass("open");
-});
+    // Hamburger Menu Logic
+    $(".mobile-nav").on("click", function () {
+        $(".nav-pages ul").addClass("open");
+    });
+
+    $(".close-nav").on("click", function () {
+        $(".nav-pages ul").removeClass("open");
+    });
 </script>
 
 </body>
-
 </html>
-
