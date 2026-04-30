@@ -111,21 +111,35 @@ p {
 
 
 /***************************************/
-/** Graphics Grid **/
+/** Graphics Collage **/
+
 .graphics-container {
-	width: 100%;
-	height: auto;
-	margin: auto;
-	padding-top: 0.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
 }
 
-.graphics-grid {
-	display: grid;
-	width: 100%;
-	margin: auto;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 0.1rem;
-	grid-auto-flow: dense;
+.graphics_row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.1rem; 
+}
+
+.graphics_row span {
+    height: 260px; 
+    display: block;
+    flex: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.graphics_row img {
+    height: 100%;   
+    width: 100%;    
+    display: block;
+    object-fit: cover; 
 }
 
 #other-media {
@@ -133,13 +147,10 @@ p {
 	grid-template-columns: repeat(3, 1fr);
 }
 
-span {
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
 span:hover,
 .web img:hover,
 .UImock img:hover {
+	z-index: 2;
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px #1f1f1f);
 }
@@ -329,19 +340,30 @@ form button:hover {
 	background-color: #c4c4c4;
 }
 
-
-
-
 /*********************************************/
+@media (max-width: 1024px) {
+    .graphics-grid span { height: 250px; }
+}
+
 @media only screen and (max-width: 768px) {
 
 #home {
 	display: none;
 }
 
-.graphics-grid {
-	grid-template-columns: repeat(3, 1fr);
-}
+.graphics_row {
+        flex-wrap: wrap;
+    }
+
+    .graphics_row span {
+        height: 200px;
+        flex: 1 1 40%;
+    }
+
+    .graphics_row img {
+        height: 100%;
+        object-fit: cover;
+    }
 
 #other-media {
 	width: 100%;
