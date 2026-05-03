@@ -125,7 +125,6 @@ p {
 	display: none;
 }
 
-
 /***************************************/
 /** hero-banner **/
 .hero-banner {
@@ -159,10 +158,8 @@ p {
   	display: block;
 }
 
-
 /***************************************/
 /** Graphics Collage **/
-
 .graphics-container {
     width: 100%;
     display: flex;
@@ -200,13 +197,6 @@ p {
     transform: scale(1.1);
     filter: drop-shadow(0 0 10px #1f1f1f);
 }
-
-span img {
-	object-fit: cover;
-	width: 100%;
-	height: auto;
-}
-
 
 /***************************************/
 /** Web Section **/
@@ -269,7 +259,6 @@ span img {
 
 /*****************************************/
 /* Video Section */
-
 .video-container {
 	width: 60%;
 	height: auto;
@@ -302,8 +291,6 @@ footer {
 	text-align: center;
 	color: white;
 }
-
-
 
 /*****************************************/
 /* Form Styles */
@@ -369,7 +356,6 @@ form button:hover {
     filter: none;
 }
 
-/** Navigation Mobile Update **/
 .nav {
     justify-content: space-between; 
 }
@@ -377,7 +363,7 @@ form button:hover {
 .mobile-nav {
 	display: flex;
     margin-left: auto;
-    background-color: #213147; /* Banner blue background for the icon */
+    background-color: #213147;
     padding: 5px;
     border-radius: 8px;
     filter: drop-shadow(0 0 5px #000000);
