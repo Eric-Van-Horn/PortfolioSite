@@ -21,11 +21,17 @@ body {
 	background-color: #e8e8e8;
 }
 
-h1, h2, h3 {
+h1, h3 {
 	font-family: "Be Vietnam Pro", sans-serif;
   	font-weight: 900;
   	font-style: normal;
   	color: #78BCD2;
+}
+
+h2 {
+	font-family: "Be Vietnam Pro", sans-serif;
+  	font-weight: 900;
+  	font-style: normal;
 }
 
 p {
@@ -255,6 +261,16 @@ p {
 	width: 100%;
 	height: auto;
 	transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.UImock a {
+	text-decoration: none;
+	color: #78BCD2;
+	transition: color 0.3s ease;
+}
+
+.UImock a:hover {
+	color: #3b5c66;
 }
 
 /*****************************************/
