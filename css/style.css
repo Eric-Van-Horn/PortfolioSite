@@ -1,3 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#marketing, #ui-ux {
+    scroll-margin-top: 80px;
+}
+
+/*******************************/
 * {
 	box-sizing: border-box;
 }
@@ -6,6 +15,13 @@ body {
 	margin: 0;
 	top: 0;
 	background: #fffafa;
+	 	font-family: "Roboto", sans-serif;
+}
+
+.titles {
+	width: 100%;
+	height: auto;
+	text-align: center;
 }
 
 /** Spacer **/
@@ -15,11 +31,12 @@ body {
 	margin: auto;
 }
 
-.background-grey {
+#grey-background {
 	width: 100%;
-	padding-bottom: 20px;
+	padding: 60px 0;
 	background-color: #e8e8e8;
 }
+
 
 h1, h3 {
 	font-family: "Be Vietnam Pro", sans-serif;
@@ -30,12 +47,8 @@ h1, h3 {
 
 h2 {
 	font-family: "Be Vietnam Pro", sans-serif;
-  	font-weight: 900;
+  	font-weight: 600;
   	font-style: normal;
-}
-
-p {
- 	font-family: "Roboto", sans-serif;
 }
 
 /**********************************/
@@ -144,7 +157,7 @@ p {
 }
 
 .hero-copy {
-	width: 55%;
+	width: 50%;
 	height: auto;
 	background: linear-gradient(#304561, #213147);
 	color: white;
@@ -152,7 +165,7 @@ p {
 }
 
 .hero-vid {
-	width: 45%;
+	width: 50%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -164,10 +177,63 @@ p {
   	display: block;
 }
 
+.hero-cta {
+	display: flex;
+	gap: 15px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.hero-button {
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px 28px;
+	border-radius: 30px;
+	transition: all 0.3s ease;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.hero-button-ui {
+	background-color: #78BCD2;
+	color: #213147;
+}
+
+.hero-button-ui:hover {
+	background-color: #fff;
+	color: #213147;
+	transform: translateY(-2px);
+}
+
+.hero-button-marketing {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.hero-button-marketing:hover {
+	background-color: #fff;
+	color: #213147;
+	transform: translateY(-2px);
+}
+
 /***************************************/
+/** Graphics/Video Overview **/
+.digital-content {
+	width: 90%;
+	height: auto;
+	margin: auto;
+	margin-bottom: 60px;
+	margin-top: 50px;
+}
+
 /** Graphics Collage **/
 .graphics-container {
     width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
@@ -182,7 +248,7 @@ p {
 }
 
 .graphics_row span {
-    height: 260px; 
+    height: 220px; 
     display: block;
     flex: auto;
     transition: transform 0.5s ease, filter 0.5s ease;
@@ -194,24 +260,222 @@ p {
     width: 100%;    
     display: block;
     object-fit: cover; 
+    border-radius: 10px;
 }
 
 .graphics_row span:hover,
 .web img:hover,
-.UImock img:hover {
+.UImock img:hover,
+.case-card:hover {
 	z-index: 2;
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px #1f1f1f);
+    transform: scale(1.05);
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+.video-container {
+	width: 100%;
+	margin: 40px auto 0 auto;
+	margin-top: 15px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+iframe {
+	width: 100%;
+	max-width: 100%;
+	aspect-ratio: 16 / 9;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 /***************************************/
-/** Web Section **/
-.web {
+/** Case Studies **/
+.case-studies {
+	width: 100%;
+	height: auto;
+}
+
+.case-studies-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.case-section-heading {
+	color: #213147;
+	font-size: 1.8rem;
+	border-left: 5px solid #78BCD2;
+	padding-left: 15px;
+	margin: 40px 0 20px 0;
+}
+
+.case-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-bottom: 50px;
+}
+
+.case-card {
+	background: #ffffff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+	transition: transform 0.5s ease, filter 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.05);
+}
+
+.case-card-img-wrap {
+	width: 100%;
+	height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.case-card-img-wrap img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.case-card h2 {
+	font-size: 1.3rem;
+	margin: 10px 0;
+	color: #213147;
+}
+
+.case-card p {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 20px;
+	flex-grow: 1;
+}
+
+.case-card-action {
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: bold;
+	color: #78BCD2;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	letter-spacing: 1px;
+	transition: color 0.3s;
+}
+
+.case-card-action:hover {
+	color: #213147;
+}
+
+/* Marketing Grid Specifics */
+.marketing-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.placeholder-card {
+	border: 2px dashed #bcbcbc;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.placeholder-icon {
+	font-size: 3rem;
+	color: #bcbcbc;
+	margin-bottom: 15px;
+}
+
+/** Case Study Overlay **/
+.modal-overlay {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #fff;
+    margin: auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px; top: 20px;
+    font-size: 30px; cursor: pointer;
+}
+
+/* Horizontal Carousel */
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex-shrink: 0;      
+    width: 300px;
+}
+
+.carousel-item img, 
+.carousel-item video {
+    height: 300px; 
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    word-wrap: break-word;
+}
+
+
+
+.clickable-card { cursor: pointer; }
+
+.modal-content a {
+	text-decoration: none;
+	color: black;
+	line-height: 30px;
+	display: flex;
+}
+
+.modal-content a:hover {
+   	color: #78BCD2;
+}
+
+/***************************************/
+/** Website Section **/
+.web-section {
 	width: 100%;
 	height: auto;
 	margin: auto;
 	padding-top: 30px;
+}
 
+.web-section-container {
+	width: 95%;
+	margin: auto;
 	display: flex;
 	justify-content: space-around;
 }
@@ -241,63 +505,6 @@ p {
 	transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.UI {
-	width: 90%;
-	height: auto;
-	margin: auto;
-	padding-top: 20px;
-
-	display: flex;
-	justify-content: space-around;
-}
-
-.UImock {
-	width: 15%;
-	height: auto;
-	text-align: center;
-}
-
-.UImock img {
-	width: 100%;
-	height: auto;
-	transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.UImock a {
-	text-decoration: none;
-	color: #78BCD2;
-	transition: color 0.3s ease;
-}
-
-.UImock a:hover {
-	color: #3b5c66;
-}
-
-/*****************************************/
-/* Video Section */
-.video-container {
-	width: 60%;
-	height: auto;
-	margin: auto;
-	padding-bottom: 30px;
-	display: grid;
-	gap: 5px;
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.video-container span {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-iframe {
-	width: 100%;
-	max-width: 100%;
-	aspect-ratio: 16 / 9;
-	border: none;
-}
-
 /*****************************************/
 /* Footer */
 footer {
@@ -308,46 +515,9 @@ footer {
 	color: white;
 }
 
-/*****************************************/
-/* Form Styles */
-form {
-	width: 50%;
-	margin: auto;
-	padding: 10px;
-	border: solid 2px black;
-	border-radius: 10px;
-	text-align: left;
-}
 
-label {
-	display: block;
-	padding-bottom: 10px;
-}
-
-form input[type="text"], form input[type="email"],
-form textarea {
-	font-family: roboto;
-  	width: 100%;
- 	padding: 12px 15px;
-  	margin-bottom: 20px;
-  	border: 1px solid #ccc;
-  	border-radius: 10px;
-  	background-color: #fffafa;
-  	transition: border 0.3s, box-shadow 0.3s;
-}
-
-form button {
-	max-height: 30px;
-	max-width: 150px;
-	border-radius: 10px;
-	background-color: transparent;
-}
-
-form button:hover {
-	background-color: #c4c4c4;
-}
-
-/*********************************************/
+/**************************************************/
+/** Media Screen (Responsiveness) **/
 @media (max-width: 1024px) {
     .graphics_row span { height: 250px; }
 }
@@ -356,20 +526,6 @@ form button:hover {
 
 #home {
 	display: none;
-}
-
-.graphics_row {
-    flex-direction: column;
-}
-
-.graphics_row span {
-    height: auto;
-    width: 100%;
-}
-
-.graphics_row span:hover {
-    transform: none;
-    filter: none;
 }
 
 .nav {
@@ -432,39 +588,4 @@ form button:hover {
 
 .hero-vid {
 	width: 100%;
-}
-
-.web {
-	flex-direction: column;
-}
-
-.web-copy, .web-img {
-	width: 100%;
-}
-
-.UI {
-	flex-direction: column;
-}
-
-.UImock {
-	width: 100%;
-}
-
-.UImock img {
-	width: 50%;
-}
-
-
-.video-container {
-	width: 100%;
-	flex-direction: column;
-	padding: 15px;
-	grid-template-columns: repeat(1, 1fr);
-}
-
-form {
-	width: 90%;
-	margin: auto;
-}
-
 }
