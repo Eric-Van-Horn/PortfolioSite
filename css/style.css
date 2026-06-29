@@ -449,8 +449,6 @@ iframe {
     word-wrap: break-word;
 }
 
-
-
 .clickable-card { cursor: pointer; }
 
 .modal-content a {
@@ -503,6 +501,45 @@ iframe {
 	margin: auto;
 	height: auto;
 	transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/*****************************************/
+/* Form Styles */
+form {
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	border: solid 2px black;
+	border-radius: 10px;
+	text-align: left;
+}
+
+label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"],
+form textarea {
+	font-family: roboto;
+  	width: 100%;
+ 	padding: 12px 15px;
+  	margin-bottom: 20px;
+  	border: 1px solid #ccc;
+  	border-radius: 10px;
+  	background-color: #fffafa;
+  	transition: border 0.3s, box-shadow 0.3s;
+}
+
+form button {
+	max-height: 30px;
+	max-width: 150px;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+form button:hover {
+	background-color: #c4c4c4;
 }
 
 /*****************************************/
