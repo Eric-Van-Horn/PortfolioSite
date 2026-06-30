@@ -503,6 +503,10 @@ iframe {
 	transition: transform 0.5s ease, filter 0.5s ease;
 }
 
+.web-img img:hover {
+	transform: scale(1.1);
+}
+
 /*****************************************/
 /* Form Styles */
 form {
@@ -625,4 +629,37 @@ footer {
 
 .hero-vid {
 	width: 100%;
+}
+
+/** Graphics & Editing Section **/
+.graphics_row {
+	gap: 0.3rem;
+}
+
+.graphics_row span {
+    height: 400px;  
+}
+
+/** Case Studies **/
+.case-grid {
+	display: flex;
+	flex-direction: column;
+}
+
+/** Web Section **/
+.web-section-container {
+	flex-direction: column;
+}
+
+.web-copy {
+	width: 100%;
+}
+
+.web-img {
+	width: 100%;
+}
+
+
+form {
+	width: 90%;
 }
