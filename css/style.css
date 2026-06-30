@@ -640,6 +640,11 @@ footer {
     height: 400px;  
 }
 
+.video-container {
+	display: flex;
+	flex-direction: column;
+}
+
 /** Case Studies **/
 .case-grid {
 	display: flex;
