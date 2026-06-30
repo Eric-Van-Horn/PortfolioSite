@@ -651,6 +651,16 @@ footer {
 	flex-direction: column;
 }
 
+/** Modal Responsive Adjustments **/
+.modal-overlay {
+    padding: 20px;
+}
+
+.modal-content {
+    width: 100%;
+    padding: 20px;
+}
+
 /** Web Section **/
 .web-section-container {
 	flex-direction: column;
