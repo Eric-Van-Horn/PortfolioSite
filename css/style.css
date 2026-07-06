@@ -359,7 +359,7 @@ iframe {
 	flex-grow: 1;
 }
 
-.case-card-action {
+.case-card-action, .case-card-action p {
 	font-family: "Be Vietnam Pro", sans-serif;
 	font-weight: bold;
 	color: #78BCD2;
@@ -370,7 +370,7 @@ iframe {
 	transition: color 0.3s;
 }
 
-.case-card-action:hover {
+.case-card-action:hover, .case-card-action:hover p {
 	color: #213147;
 }
 
