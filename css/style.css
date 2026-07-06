@@ -296,7 +296,7 @@ h2 {
 	font-size: 0.85rem;
 	letter-spacing: 1px;
 
-	width: 50%;
+	width: 100%;
 	height: auto;
 	padding: 15px;
 	border: solid 2px #000000;
@@ -672,11 +672,6 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
-
-.video-container span p {
-	width: 100%;
-}
-
 
 /** Case Studies **/
 .case-grid {
