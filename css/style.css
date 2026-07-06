@@ -281,6 +281,34 @@ h2 {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+.video-container span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.video-container span p {
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: bold;
+	color: #78BCD2;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	letter-spacing: 1px;
+
+	width: 50%;
+	height: auto;
+	padding: 15px;
+	border: solid 2px #000000;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.video-container span p:hover {
+	color: #213147;
+	transition: all 0.3s ease;
+}
+
 iframe {
 	width: 100%;
 	max-width: 100%;
@@ -644,6 +672,11 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
+
+.video-container span p {
+	width: 100%;
+}
+
 
 /** Case Studies **/
 .case-grid {
