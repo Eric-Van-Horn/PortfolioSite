@@ -305,6 +305,12 @@ h2 {
 	text-align: center;
 }
 
+/** Temporarily Hidden **/
+#hidden-creative-process {
+	color: transparent;
+	border: solid 2px transparent;
+}
+
 .video-container span p:hover {
 	color: #213147;
 	transition: all 0.3s ease;
